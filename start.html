@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="drums.css">
+</head>
+<body>
+
+
+ </div class='keys'>
+<div data-key="78" class="key">
+    <kbd>N</kbd>
+    <span class="sound">kick2</span>
+    
+</div>
+
+<div data-key="66" class="key">
+    <span class="sound">kick1</span>
+    <kbd>b</kbd>
+
+</div>
+<div data-key="86" class="key">
+    <span class="sound">snare2</span>
+    <kbd>v</kbd>
+</div>
+
+<div data-key="67"class="key">
+    <span class="sound">snare2</span>
+    <kbd>c</kbd>
+</div>
+ <div data-key="88" class="key">
+    <span class="sound">close hihat2</span>
+  <kbd>x</kbd> 
+</div>
+
+<div data-key="90" class="key">
+    <span class="sound">close hihat1</span>
+  <kbd>z</kbd> 
+</div>
+<div data-key="65" class="key">
+    <span class="sound">open hihat1</span>
+  <kbd>a</kbd> 
+</div>
+<div data-key="83" class="key">
+    <span class="sound">close hihat2</span>
+  <kbd>s</kbd> 
+</div>
+<div data-key="68" class="key">
+    <span class="sound">tom1</span>
+  <kbd>d</kbd> 
+</div>
+<div data-key="70" class="key">
+    <span class="sound">tom2</span>
+  <kbd>f</kbd> 
+</div>
+<div data-key="71" class="key">
+    <span class="sound">ground</span>
+  <kbd>g</kbd> 
+</div>
+<div data-key="81" class="key">
+    <span class="sound">crash</span>
+  <kbd>q</kbd> 
+</div>
+ 
+<div data-key="87" class="key">
+    <span class="sound">china</span>
+  <kbd>w</kbd> 
+</div>
+ 
+<div data-key="69" class="key">
+    <span class="sound">ride</span>
+  <kbd>e</kbd> 
+</div>
+<div data-key="82" class="key">
+    <span class="sound">bell</span>
+  <kbd>r</kbd> 
+</div>
+ 
+ <audio data-key="78"src="sounds\kick.wav"></audio>
+
+ <audio data-key="66"src="sounds\kick.wav"></audio>>
+ <audio data-key="86"src="sounds\snare.wav"></audio>
+ <audio data-key="67"src="sounds\snare.wav"></audio>
+ <audio data-key="88"src="sounds\ohihat.wav"></audio>
+ <audio data-key="90"src="sounds\ohihat.wav"></audio>
+ <audio data-key="65"src="sounds\chihat.wav"></audio>
+ <audio data-key="83"src="sounds\chihat.wav"></audio>
+ <audio data-key="68"src="sounds\tom.wav"></audio>
+ <audio data-key="70"src="sounds\tom.wav"></audio>
+ <audio data-key="71"src="sounds\tom.wav"></audio>
+ <audio data-key="81"src="sounds\ride.wav"></audio>
+ <audio data-key="87"src="sounds\ride.wav"></audio>
+ <audio data-key="69"src="sounds\ride.wav"></audio>
+ <audio data-key="82"src="sounds\ride.wav"></audio>
+</div>
+ 
+ 
+    <div>
+    <script>
+         window.addEventListener("keydown",function(e){
+
+var audio = document.querySelector(`audio[data-key="${e.keycode}"]`)
+
+})
+
+    </script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+crossorigin="anonymous"></script>
+  </div>
+</body>
+</html>

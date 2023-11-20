@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Drum Kit</title>
+  <link rel="stylesheet" href="drums.css">
+  <link rel="icon" href="https://fav.farm/✅" />
+</head>
+<body>
+<div>
+
+
+  <h1 class="main-title">rock Drum Kit 
+    by firas
+  </h1>
+
+
+</div>
+
+</div class='keys'>
+<div data-key="78" class="key" id="n">
+   
+    <span class="sound">kick</span>
+    <kbd>n</kbd>
+</div>
+
+<div data-key="66" class="key" id="b">
+    <span class="sound">kick</span>
+    <kbd>b</kbd>
+
+</div>
+<div data-key="86" class="key" id="v">
+    <span class="sound">snare</span>
+    <kbd>v</kbd>
+</div>
+
+<div data-key="67"class="key"id="c">
+    <span class="sound">snare</span>
+    <kbd>c</kbd>
+</div>
+ <div data-key="88" class="key"id="x">
+    <span class="sound">pd hihat</span>
+  <kbd>x</kbd> 
+</div>
+
+<div data-key="90" class="key"id="z">
+    <span class="sound">pd hihat</span>
+  <kbd>z</kbd> 
+</div>
+<div data-key="65" class="key"id="a">
+    <span class="sound">op hihat</span>
+  <kbd>a</kbd> 
+</div>
+<div data-key="83" class="key"id="s">
+    <span class="sound">op hihat</span>
+  <kbd>s</kbd> 
+</div>
+<div data-key="68" class="key"id="d">
+    <span class="sound">high tom</span>
+  <kbd>d</kbd> 
+</div>
+<div data-key="70" class="key"id="f">
+    <span class="sound">low tom</span>
+  <kbd>f</kbd> 
+</div>
+<div data-key="71" class="key"id="g">
+    <span class="sound">floor</span>
+  <kbd>g</kbd> 
+</div>
+<div data-key="81" class="key"id="q">
+    <span class="sound">crash</span>
+  <kbd>q</kbd> 
+</div>
+ 
+<div data-key="87" class="key"id="w">
+    <span class="sound">china</span>
+  <kbd>w</kbd> 
+</div>
+ 
+<div data-key="69" class="key"id="e">
+    <span class="sound">ride</span>
+  <kbd>e</kbd> 
+</div>
+<div data-key="82" class="key"id="r">
+    <span class="sound">bell</span>
+  <kbd>r</kbd> 
+</div>
+ 
+
+  <audio data-key="78"src="sounds\kick.wav"></audio>
+  <audio data-key="66"src="sounds\kick.wav"></audio>>
+  <audio data-key="86"src="sounds\snare1.wav"></audio>
+  <audio data-key="67"src="sounds\snare1.wav"></audio>
+  <audio data-key="88"src="sounds\pdhat.wav"></audio>
+  <audio data-key="90"src="sounds\pdhat.wav"></audio>
+  <audio data-key="65"src="sounds\ophat.wav"></audio>
+  <audio data-key="83"src="sounds\ophat.wav"></audio>
+  <audio data-key="68"src="sounds\tom1.wav"></audio>
+  <audio data-key="70"src="sounds\tom2.wav"></audio>
+  <audio data-key="71"src="sounds\tom.wav"></audio>
+  <audio data-key="81"src="sounds\crash2.wav"></audio>
+  <audio data-key="87"src="sounds\china.wav"></audio>
+  <audio data-key="69"src="sounds\ride1.wav"></audio>
+  <audio data-key="82"src="sounds\bell.wav"></audio>
+ </div>
+
+<script>
+  function playSound(e) {
+    const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+    const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+    if (!audio) return;
+
+    key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
+  }
+  window.addEventListener('keydown', playSound);
+</script>
+
+
+      </script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" 
+integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
+crossorigin="anonymous"></script>
+
+</body>
+</html>
